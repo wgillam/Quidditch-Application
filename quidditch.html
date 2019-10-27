@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quidditch Applicant</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<script type="text/javascript" src="quidquiz.js"></script>
+
+    
+    <header class="pro-quid">
+      <h1>Professional Quidditch Player Application</h1>
+</header>
+    <section>
+        <form method="GET">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label>First Name:<br/>
+                <input type="text" name="fname" size="15" maxlength="30" required="required" /></label><br/>
+                <label>Last Name:<br/>
+                <input type="text" name="lname" size="15" maxlength="30" required="required" /></label><br/>
+                <label>Address:<br/>
+                <input type="text" name="address" size="30" maxlength="60" required="required" /></label>
+                <p>Please provide a physical address so our owls can reach you.</p><br/>
+                <label>Date of Birth:<br/>
+                <input type="date" name="dob" required="required" /></label>
+            </fieldset>
+            <br/>
+
+            <fieldset>
+                <legend>Applicant Experience</legend>
+                <p>What school did you attend?<br/>
+                    <input type="radio" name="school" value="hogwarts"/> Hogwarts School of Witchcraft and Wizardry<br/>
+                    <input type="radio" name="school" value="ilvermorny"/> Ilvermorny<br/>
+                    <input type="radio" name="school" value="beauxbatons"/> Beauxbatons Academy of Magic<br/>
+                    <input type="radio" name="school" value="durmstrang"/> Durmstrang Institute<br/>
+                    <input type="radio" name="school" value="other"/> Other<br/>
+                </p>
+
+
+                <p>Did you graduate?<br/>
+                    <input type="radio" name="yes" value="yes"/>Yes<br/>
+                    <input type="radio" name="no" value="no"/>No<br/>
+                </p>
+
+                <label>If No, why?<br/>
+                <textarea name="nongrad" cols="20" rows="3">Enter your reason...</textarea></label><br/>
+
+                <p>Did you play Quidditch in school?<br/>
+                    <input type="radio" name="yes2" value="yes2"/>Yes<br/>
+                    <input type="radio" name="no2" value="no2"/>No<br/>
+                </p>
+
+                <label>If No, why?<br/>
+                <textarea name="nonplayer" cols="20" rows="3">Enter your experience...</textarea></label><br/>
+
+                <p>What position(s) have you played? [Select all that apply]<br/>
+                    <input type="checkbox" name="pos" value="chaser"/> Chaser<br/>
+                    <input type="checkbox" name="pos" value="beater"/> Beater<br/>
+                    <input type="checkbox" name="pos" value="keeper"/> Keeper<br/>
+                    <input type="checkbox" name="pos" value="seeker"/> Seeker<br/>
+                    <input type="checkbox" name="pos" value="other"/> Other<br/>
+                </p>
+
+                <p>What position(s) are you interested in applying for? [Select all that apply]<br/>
+                    <input type="checkbox" name="pos2" value="chaser"/> Chaser<br/>
+                    <input type="checkbox" name="pos2" value="beater"/> Beater<br/>
+                    <input type="checkbox" name="pos2" value="keeper"/> Keeper<br/>
+                    <input type="checkbox" name="pos2" value="seeker"/> Seeker<br/>
+                    <input type="checkbox" name="pos2" value="referee"/> Referee<br/>
+                    <input type="checkbox" name="pos2" value="commentator"/> Commentator
+                </p>
+            </fieldset>
+            <br/>
+        </form>
+        
+        
+        <form action="quidquiz.php" method="get" id="quiz">
+
+            <fieldset>
+                <legend>Applicant Assessment</legend>
+                <p>Please take the following assessment test. This is not a timed assessment. Take your time and answer to the best of your ability. Please do not cheat. If you do, we will know and your application will be declined by Howler. Thank You.</p><br/>
+
+                <ol>
+                    <li>
+                        <p>In Quidditch, what is the time limit for each game?<br/>
+                            <input type="radio" name="q1" value="A"/>3 Hours<br/>
+                            <input type="radio" name="q1" value="B"/>24 Hours<br/> 
+                            <input type="radio" name="q1" value="C"/>3 Months<br/>
+                            <input type="radio" name="q1" value="D"/>No Time Limit<br/>
+
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>According to Rubeus Hagrid, what sport is Quidditch equivalent to in the Muggle World?<br/>
+                            <input type="radio" name="q2" value="A"/>Basketball<br/>
+                            <input type="radio" name="q2" value="B"/>Soccer<br/> 
+                            <input type="radio" name="q2" value="C"/>Baseball<br/>
+                            <input type="radio" name="q2" value="D"/>There isn't a sport<br/>
+
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>How many people are on a Quidditch team?<br/>
+                            <input type="radio" name="q3" value="A"/>6<br/>
+                            <input type="radio" name="q3" value="B"/>9<br/> 
+                            <input type="radio" name="q3" value="C"/>7<br/>
+                            <input type="radio" name="q3" value="D"/>5<br/>
+
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>What is the name of the ancient German game that Quidditch first originated?<br/>
+                            <input type="radio" name="q4" value="A"/>Stichstock<br/>
+                            <input type="radio" name="q4" value="B"/>Hexenkugeln<br/> 
+                            <input type="radio" name="q4" value="C"/>Besenspiel<br/>
+                            <input type="radio" name="q4" value="D"/>Blitzschlag<br/>
+
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>Who is the author of <i>Quidditch Through The Ages</i>?<br/>
+                            <input type="radio" name="q5" value="A"/>Gilderoy Lockhart<br/>
+                            <input type="radio" name="q5" value="B"/>Kennilworthy Whisp<br/> 
+                            <input type="radio" name="q5" value="C"/>Miranda Goshawk<br/>
+                            <input type="radio" name="q5" value="D"/>Bathilda Bagshott<br/>
+
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>Which of these moves is performed by a Seeker?<br/>
+                            <input type="radio" name="q6" value="A"/>Parkin’s Pincer<br/>
+                            <input type="radio" name="q6" value="B"/>Porskoff Ploy<br/> 
+                            <input type="radio" name="q6" value="C"/>Wronski Feint<br/>
+                            <input type="radio" name="q6" value="D"/>Hawkshead Attacking Formation<br/>
+
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>How many points do you receive after scoring a goal?<br/>
+                            <input type="radio" name="q7" value="A"/>10<br/>
+                            <input type="radio" name="q7" value="B"/>20<br/> 
+                            <input type="radio" name="q7" value="C"/>50<br/>
+                            <input type="radio" name="q7" value="D"/>150<br/>
+
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>When did the first ever Quidditch World Cup take place?<br/>
+                            <input type="radio" name="q8" value="A"/>1437<br/>
+                            <input type="radio" name="q8" value="B"/>1347<br/> 
+                            <input type="radio" name="q8" value="C"/>1374<br/>
+                            <input type="radio" name="q8" value="D"/>1473<br/>
+
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>How many balls are used during a Quidditch game?<br/>
+                            <input type="radio" name="q9" value="A"/>5<br/>
+                            <input type="radio" name="q9" value="B"/>4<br/> 
+                            <input type="radio" name="q9" value="C"/>3<br/>
+                            <input type="radio" name="q9" value="D"/>6<br/>
+
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>What was the Seeker originally called?<br/>
+                            <input type="radio" name="q10" value="A"/>The Searcher<br/>
+                            <input type="radio" name="q10" value="B"/>The Finder<br/> 
+                            <input type="radio" name="q10" value="C"/>The Snidgeter<br/>
+                            <input type="radio" name="q10" value="D"/>The Hunter<br/>
+
+                        </p>
+                    </li>
+                </ol>
+            </fieldset>
+             </form>
+            <button onclick="returnScore()">View Results</button>
+       
+
+    </section>
+
+</body>
+</html>
