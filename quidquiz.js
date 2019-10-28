@@ -12,8 +12,8 @@ var score = 0;
 function getScore(){
  
   for (var i=0; i<tot; i++)
-    if(getCheckedValue("q"+i)===answers[i]) score += 1; // increment only
-  return score;
+    if(getCheckedValue("q"+i)===answers[i]); // increment only (score += 1)
+  return score++;
 }
 
 function returnScore(){
